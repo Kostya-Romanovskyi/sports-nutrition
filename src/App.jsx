@@ -1,13 +1,14 @@
-import { DivEL } from "./App.styled";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Header from "./components/Header/Header";
 
 function App() {
-
   return (
-    <>
-      <DivEL className="container">
-        <h1>Home page</h1>
-      </DivEL>
-    </>
+    <Routes>
+      <Route path="/" element={<Header />}>
+        <Route index path="/" element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 

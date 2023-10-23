@@ -17,7 +17,6 @@ const GlobalStyles = createGlobalStyle`
 @font-face {
     font-family: 'Grtsk Peta';
     src: url('../fonts/GrtskPeta-Bold.eot');
-
         url('../fonts/GrtskPeta-Bold.eot?#iefix') format('embedded-opentype'),
         url('../fonts/GrtskPeta-Bold.woff2') format('woff2'),
         url('../fonts/GrtskPeta-Bold.woff') format('woff'),
@@ -60,15 +59,17 @@ body{
 
 .container{
     padding: 0 15px;
+    margin: 0 auto;
 
     ${media.mobile} {
         max-width: 480px;
-        margin: 0 auto;
       }
+
     ${media.tablet} {
         max-width: 768px;
         padding: 0 17px;
       }
+
     ${media.desktop} {
         max-width: 1200px;
         padding: 0 25px;
