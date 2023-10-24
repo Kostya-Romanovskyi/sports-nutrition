@@ -47,7 +47,7 @@ img{
 }
 
 ul{
-    list-style: none
+    list-style: none;
     margin: 0;
     padding: 0
 }
@@ -71,7 +71,7 @@ body{
       }
 
     ${media.desktop} {
-        max-width: 1200px;
+        max-width: 1464px;
         padding: 0 25px;
       }
 }
