@@ -1,59 +1,83 @@
 import { createGlobalStyle } from "styled-components";
 import { media } from "../ui/media";
+import {
+  GrtskPetaBoldWoff2,
+  GrtskPetaBoldWoff,
+  GrtskPetaBoldEot,
+  GrtskPetaBoldTtf,
+  GrtskPetaMediumWoff2,
+  GrtskPetaMediumWoff,
+  GrtskPetaMediumEot,
+  GrtskPetaMediumTtf,
+  GrtskPetaRegularWoff2,
+  GrtskPetaRegularWoff,
+  GrtskPetaRegularEot,
+  GrtskPetaRegularTtf,
+} from "../fonts/fonts";
 
 const GlobalStyles = createGlobalStyle`
-
 @font-face {
-    font-family: 'Grtsk Peta';
-    src: url('./fonts/GrtskPeta-Regular.eot');
-        url('./fonts/GrtskPeta-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/GrtskPeta-Regular.woff2') format('woff2'),
-        url('./fonts/GrtskPeta-Regular.woff') format('woff'),
-        url('./fonts/GrtskPeta-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'GrtskPeta-Bold';
+    src: url(${GrtskPetaBoldWoff2}) format('woff2'),
+        url(${GrtskPetaBoldWoff}) format('woff'),
+        url(${GrtskPetaBoldEot}) format('eot'), 
+        url(${GrtskPetaBoldTtf}) format('ttf');
+        font-weight: normal;
+        font-style: normal;
 }
 
 @font-face {
-    font-family: 'Grtsk Peta';
-    src: url('../fonts/GrtskPeta-Bold.eot');
-        url('../fonts/GrtskPeta-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/GrtskPeta-Bold.woff2') format('woff2'),
-        url('../fonts/GrtskPeta-Bold.woff') format('woff'),
-        url('../fonts/GrtskPeta-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'GrtskPeta-Medium';
+    src: url(${GrtskPetaMediumWoff2}) format('woff2'),
+        url(${GrtskPetaMediumWoff}) format('woff'),
+        url(${GrtskPetaMediumEot})format('eot'),
+        url(${GrtskPetaMediumTtf}) format('ttf');
+        font-weight: normal;
+        font-style: normal;
 }
 
 @font-face {
-    font-family: 'Grtsk Peta';
-    src: url('../fonts/GrtskPeta-Medium.eot');
-    src: local('Grtsk Peta Medium'), local('GrtskPeta-Medium'),
-        url('../fonts/GrtskPeta-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/GrtskPeta-Medium.woff2') format('woff2'),
-        url('../fonts/GrtskPeta-Medium.woff') format('woff'),
-        url('../fonts/GrtskPeta-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+    font-family: 'GrtskPeta-Regular';
+    src: url(${GrtskPetaRegularWoff2}) format('woff2'),
+        url(${GrtskPetaRegularWoff}) format('woff'),
+        url(${GrtskPetaRegularEot}) format('eot'),
+        url(${GrtskPetaRegularTtf}) format('ttf');
+        font-weight: normal;
+        font-style: normal;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-img{
-    display: block;
+
+body::-webkit-scrollbar {
+    background: #f1f1f1;
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+    height: 6em;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #01bcf3;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
 
 ul{
     list-style: none;
-    margin: 0;
-    padding: 0
-}
-
-body{
-    font-family: 'Grtsk Peta', sans-serif;
 }
 
 
@@ -67,14 +91,13 @@ body{
 
     ${media.tablet} {
         max-width: 768px;
-        padding: 0 17px;
       }
 
     ${media.desktop} {
-        max-width: 1464px;
-        padding: 0 25px;
+        max-width: 1391px;
       }
 }
+
 `;
 
 export default GlobalStyles;

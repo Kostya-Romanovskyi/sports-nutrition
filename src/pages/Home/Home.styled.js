@@ -10,3 +10,8 @@ export const Container = styled.div`
   //   background-color: green;
   // }
 `;
+
+export const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+`;

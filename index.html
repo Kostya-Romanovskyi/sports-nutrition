@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0" />
     <title>Sports-nutrition</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
+
+    <link rel="preload" href="./src/fonts/GrtskPeta-Bold.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="./src/fonts/GrtskPeta-Medium.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="./src/fonts/GrtskPeta-Regular.woff2" as="font" type="font/woff2" crossorigin="" />
 
     <script type="text/javascript">
       (function (l) {
@@ -20,11 +20,7 @@
               return s.replace(/~and~/g, "&");
             })
             .join("?");
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
         }
       })(window.location);
     </script>
