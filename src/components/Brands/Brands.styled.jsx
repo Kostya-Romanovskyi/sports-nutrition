@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Slider from "react-slick";
 import { media } from "../../ui/media";
 
 const StyledBrands = styled.section`
@@ -16,18 +15,23 @@ const Title = styled.h3`
   }
 `;
 
-const SliderContainer = styled(Slider)`
+const Container = styled.div`
+  display: flex;
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 `;
 
 const Item = styled.a`
   position: relative;
   margin-right: 10px;
+  ${media.tablet} {
+    margin-right: 9px;
+  }
 `;
 
 const Link = styled.img`
-  width: 120px;
+  width: 100px;
   height: 100px;
   object-fit: contain;
   cursor: pointer;
@@ -36,13 +40,13 @@ const Link = styled.img`
     filter: grayscale(0%) !important;
   }
   ${media.tablet} {
-    width: 110px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   ${media.mobile} {
-    width: 90px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
 `;
 
-export { StyledBrands, Title, SliderContainer, Item, Link };
+export { StyledBrands, Title, Container, Item, Link };

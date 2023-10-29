@@ -9,7 +9,6 @@ import brandEight from "../../assets/icons/icon_8.webp";
 import brandNine from "../../assets/icons/icon_9.webp";
 import brandTen from "../../assets/icons/icon_10.webp";
 
-import { Breakpoints } from "../../ui/breakpoints.js";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,7 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import {
   StyledBrands,
   Title,
-  SliderContainer,
+  Container,
   Item,
   Link,
 } from "./Brands.styled";
@@ -36,36 +35,17 @@ const Data = [
 ];
 
 const Brands = () => {
-  const settings = {
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    responsive: [
-      {
-        breakpoint: Breakpoints.MD,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-      {
-        breakpoint: Breakpoints.SM,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  };
+  
   return (
     <StyledBrands>
       <Title>Производители</Title>
-      <SliderContainer {...settings}>
+      <Container>
         {Data.map((el) => (
           <Item key={el.id} href="#">
             <Link src={el.imageURL}></Link>
           </Item>
         ))}
-      </SliderContainer>
+      </Container>
     </StyledBrands>
   );
 };
