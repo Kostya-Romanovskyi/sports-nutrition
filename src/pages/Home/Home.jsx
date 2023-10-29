@@ -3,11 +3,13 @@ import ProductsGrid from "../../components/ProductsGrid/ProductsGrid";
 import Filters from "../../components/FilterRadio/FilterRadio";
 import FilterRange from "../../components/FilterRange/FilterRange";
 import FilterCheckbox from "../../components/FilterCheckbox/FilterCheckbox";
+import Blog from "../../components/Blog/Blog";
 import {
   categories,
   categories2,
   categories3,
   categories4,
+  blogs,
 } from "../../imitationAPI";
 
 const Home = () => {
@@ -27,6 +29,7 @@ const Home = () => {
           <ProductsGrid />
         </GridContainer>
       </Container>
+      <Blog blogs={blogs} />
     </>
   );
 };

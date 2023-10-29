@@ -4,6 +4,8 @@ const Colors = {
   totalTextColor: "#bdbdbd",
   whiteColor: "#ffffff",
   blueHoverColor: "#3a67ba",
+  blogBgColor: "#000000",
+  blogDescriptionColor: "#828282",
 };
 
 export default Colors;
