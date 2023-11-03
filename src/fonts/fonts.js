@@ -8,10 +8,10 @@ import GrtskPetaMediumTtf from "./GrtskPeta-Medium.ttf";
 import GrtskPetaMediumWoff from "./GrtskPeta-Medium.woff";
 import GrtskPetaMediumWoff2 from "./GrtskPeta-Medium.woff2";
 
-import GrtskPetaRegularEot from "./GrtskPeta-Medium.eot";
-import GrtskPetaRegularTtf from "./GrtskPeta-Medium.ttf";
-import GrtskPetaRegularWoff from "./GrtskPeta-Medium.woff";
-import GrtskPetaRegularWoff2 from "./GrtskPeta-Medium.woff2";
+import GrtskPetaRegularEot from "./GrtskPeta-Regular.eot";
+import GrtskPetaRegularTtf from "./GrtskPeta-Regular.ttf";
+import GrtskPetaRegularWoff from "./GrtskPeta-Regular.woff";
+import GrtskPetaRegularWoff2 from "./GrtskPeta-Regular.woff2";
 
 export {
   GrtskPetaBoldEot,
