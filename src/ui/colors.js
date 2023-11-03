@@ -4,6 +4,7 @@ const Colors = {
   totalTextColor: "#bdbdbd",
   whiteColor: "#ffffff",
   blueHoverColor: "#3a67ba",
+  greyCategoryColor: "#828b8d",
 };
 
 export default Colors;

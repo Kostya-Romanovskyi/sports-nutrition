@@ -6,22 +6,19 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  gap: 12px;
-
-  text-align: center;
+  gap: 10px;
 
   ${media.tablet} {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 18px;
   }
 
   ${media.desktop} {
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
   }
 `;
 
 export const ListLink = styled(Link)`
   display: block;
-  height: 290px;
-  background-color: yellow;
 `;

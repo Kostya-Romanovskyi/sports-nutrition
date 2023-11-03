@@ -2,7 +2,7 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 
-import { Container, FlexContainer, StyledInput, Text, Button } from "./FilterRange.styled";
+import { Container, FlexContainer, StyledInput, Text, BtnContainer, Button } from "./FilterRange.styled";
 
 const valuetext = (value) => {
   return `${value}`;
@@ -61,7 +61,9 @@ const RangeSlider = () => {
           onKeyDown={handleKeyDown}
           placeholder="0"
         />
+
         <span>-</span>
+
         <StyledInput
           type="number"
           value={secondInput}
@@ -69,10 +71,13 @@ const RangeSlider = () => {
           onKeyDown={handleKeyDown}
           placeholder="0"
         />
-        <Button type="button">OK</Button>
+
+        <BtnContainer>
+          <Button type="button">OK</Button>
+        </BtnContainer>
       </FlexContainer>
 
-      <Box sx={{ width: 300 }}>
+      <Box sx={{ maxWidth: "250%" }}>
         <Slider
           getAriaLabel={() => "Temperature range"}
           value={value}

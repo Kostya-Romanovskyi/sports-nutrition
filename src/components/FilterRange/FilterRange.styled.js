@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import Colors from "../../ui/colors.js";
+import { media } from "../../ui/media.js";
 
 export const Container = styled.div`
   font-family: "GrtskPeta-Medium", sans-serif;
 
-  padding-right: 16px;
+  width: 90%;
+  margin: 0 auto;
 `;
 
 export const Text = styled.p`
@@ -20,16 +22,22 @@ export const Text = styled.p`
 
 export const FlexContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 
   margin-bottom: 25px;
+
+  ${media.mobile} {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 export const StyledInput = styled.input`
   font-family: "GrtskPeta-Medium", sans-serif;
 
-  max-width: 95px;
+  max-width: 100%;
+
   height: 35px;
 
   padding-left: 10px;
@@ -43,7 +51,17 @@ export const StyledInput = styled.input`
   &[type="number"] {
     -moz-appearance: textfield;
   }
+
+  ${media.mobile} {
+    max-width: 95px;
+  }
+
+  ${media.desktop} {
+    max-width: 85px;
+  }
 `;
+
+export const BtnContainer = styled.div``;
 
 export const Button = styled.button`
   font-size: 14px;
@@ -62,5 +80,11 @@ export const Button = styled.button`
     background-color: ${Colors.blueHoverColor};
   }
 
+  margin-top: 20px;
+
   cursor: pointer;
+
+  ${media.mobile} {
+    margin-top: 0;
+  }
 `;

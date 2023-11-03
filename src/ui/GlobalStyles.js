@@ -52,7 +52,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 html, body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -98,6 +98,9 @@ ul{
       }
 }
 
+.css-187mznn-MuiSlider-root{
+
+}
 `;
 
 export default GlobalStyles;

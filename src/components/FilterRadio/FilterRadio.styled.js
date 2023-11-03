@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import CheckboxImg from "../../assets/images/Checkbox.svg";
 import Colors from "../../ui/colors.js";
+import { media } from "../../ui/media";
 
 export const Container = styled.div`
   font-family: "GrtskPeta-Medium", sans-serif;
+
+  width: 90%;
+
+  margin: 50px auto 0 auto;
 `;
 
 export const CategoryTitle = styled.p`
@@ -19,9 +24,17 @@ export const CategoryTitle = styled.p`
 
 export const DropdownContent = styled.div`
   max-height: ${(props) => (props.$isopen ? "2000px" : "190px")};
+
+  padding-left: 5px;
+  margin-bottom: 10px;
+
   overflow: hidden;
 
   transition: max-height 500ms;
+
+  ${media.tablet} {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Item = styled.li`

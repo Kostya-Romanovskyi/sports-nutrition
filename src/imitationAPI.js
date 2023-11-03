@@ -1,3 +1,5 @@
+import Img from "./assets/images/imageSnow.png";
+
 export const categories = {
   category: "Категории",
   products: [
@@ -53,3 +55,21 @@ export const categories4 = {
     { product: "Виноград", total: 18, id: 8 },
   ],
 };
+
+export const cardsArr = [
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 1 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 2 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 3 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 4 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 5 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 6 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 7 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 8 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 9 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 10 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 11 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 12 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 13 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 14 },
+  { img: Img, label: "LIB TECH", category: "Мужской Сноуборд", price: "34392", id: 15 },
+];
