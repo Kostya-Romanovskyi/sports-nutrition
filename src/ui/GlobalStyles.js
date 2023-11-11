@@ -24,6 +24,7 @@ const GlobalStyles = createGlobalStyle`
         url(${GrtskPetaBoldTtf}) format('ttf');
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
 }
 
 @font-face {
@@ -34,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
         url(${GrtskPetaMediumTtf}) format('ttf');
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
 }
 
 @font-face {
@@ -44,6 +46,7 @@ const GlobalStyles = createGlobalStyle`
         url(${GrtskPetaRegularTtf}) format('ttf');
         font-weight: normal;
         font-style: normal;
+        font-display: swap;
 }
 
 * {
