@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { media } from "../../ui/media";
 import Colors from "../../ui/colors";
-import { Img } from "react-image";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const ImageContainer = styled.div`
   padding: 20px 10px 30px 10px;
@@ -21,7 +21,7 @@ export const ImageLink = styled(Link)`
   max-width: 100%;
 `;
 
-export const Image = styled(Img)`
+export const Image = styled(LazyLoadImage)`
   display: block;
   max-width: 100%;
   margin: 0 auto;

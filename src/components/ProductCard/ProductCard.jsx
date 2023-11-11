@@ -12,6 +12,7 @@ import {
 } from "./ProductCard.styled";
 
 const ProductCard = ({ id, img, label, category, price }) => {
+  console.log("img=", img);
   return (
     <>
       <ImageContainer>
