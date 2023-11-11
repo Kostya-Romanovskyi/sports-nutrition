@@ -1,4 +1,4 @@
-import Img from "./assets/images/imageSnow.png";
+import Img from "./assets/images/imageSnow.webp";
 
 export const categories = {
   category: "Категории",
