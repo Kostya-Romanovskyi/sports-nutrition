@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
 
 @font-face {
     font-family: 'Grtsk Peta';
-    src: url('./fonts/GrtskPeta-Regular.eot');
+    src: url('./fonts/GrtskPeta-Regular.eot'),
         url('./fonts/GrtskPeta-Regular.eot?#iefix') format('embedded-opentype'),
         url('./fonts/GrtskPeta-Regular.woff2') format('woff2'),
         url('./fonts/GrtskPeta-Regular.woff') format('woff'),
@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
 @font-face {
     font-family: 'Grtsk Peta';
     src: url('../fonts/GrtskPeta-Medium.eot');
-    src: local('Grtsk Peta Medium'), local('GrtskPeta-Medium'),
+    src: local('Grtsk Peta Medium'), local('GrtskPeta-Medium');
         url('../fonts/GrtskPeta-Medium.eot?#iefix') format('embedded-opentype'),
         url('../fonts/GrtskPeta-Medium.woff2') format('woff2'),
         url('../fonts/GrtskPeta-Medium.woff') format('woff'),
